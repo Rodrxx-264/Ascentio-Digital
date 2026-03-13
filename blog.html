@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Ascentio Digital</title>
+    <meta name="description" content="Artículos sobre diseño web, estrategias de conversión y marketing digital para escalar tu negocio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#020617">
+</head>
+<body>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress"></div>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" aria-label="Volver arriba">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Ascentio <span>Digital</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html#workflow">Proceso</a></li>
+                    <li><a href="index.html#pricing">Precios</a></li>
+                    <li><a href="index.html#contact" class="btn" style="padding: 8px 20px;">Contactar</a></li>
+                    <li class="lang-switch">
+                        <a href="blog.html" class="lang-btn active" title="Español">🇪🇸</a>
+                        <a href="blog-en.html" class="lang-btn" title="English">🇺🇸</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO BLOG -->
+    <section class="hero" style="height: 50vh; min-height: 400px;">
+        <div class="container">
+            <h1>Nuestro Blog</h1>
+            <p class="section-subtitle">Ideas, estrategias y tendencias sobre diseño web y marketing digital.</p>
+        </div>
+    </section>
+
+    <!-- BLOG GRID -->
+    <section id="blog-feed">
+        <div class="container">
+            <div class="blog-grid">
+                
+                <!-- Artículo 1 -->
+                <article class="blog-card reveal">
+                    <div class="blog-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" alt="Analytics" class="blog-img" loading="lazy">
+                        <span class="blog-tag">Estrategia</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>📅 12 Oct, 2024</span>
+                            <span>⏱️ 5 min lectura</span>
+                        </div>
+                        <h3 class="blog-title">5 Errores Comunes en Landing Pages</h3>
+                        <p class="blog-excerpt">Descubre por qué tu página no está convirtiendo y cómo solucionarlo con simples ajustes de diseño y copy.</p>
+                        <a href="blog-post.html" class="blog-link">Leer Artículo →</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 2 -->
+                <article class="blog-card reveal">
+                    <div class="blog-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=2070&auto=format&fit=crop" alt="Mobile Design" class="blog-img" loading="lazy">
+                        <span class="blog-tag">Diseño UI/UX</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>📅 08 Oct, 2024</span>
+                            <span>⏱️ 4 min lectura</span>
+                        </div>
+                        <h3 class="blog-title">La Importancia del Mobile First</h3>
+                        <p class="blog-excerpt">Más del 70% del tráfico web proviene de móviles. Aprende a diseñar pensando en pantallas pequeñas primero.</p>
+                        <a href="blog-post-mobile.html" class="blog-link">Leer Artículo →</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 3 -->
+                <article class="blog-card reveal">
+                    <div class="blog-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="SEO" class="blog-img" loading="lazy">
+                        <span class="blog-tag">SEO</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>📅 01 Oct, 2024</span>
+                            <span>⏱️ 6 min lectura</span>
+                        </div>
+                        <h3 class="blog-title">SEO Básico para Landing Pages</h3>
+                        <p class="blog-excerpt">Guía rápida para posicionar tu página de aterrizaje en Google sin ser un experto técnico.</p>
+                        <a href="blog-post-seo.html" class="blog-link">Leer Artículo →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h4>Ascentio Digital</h4>
+                <p>Transformamos visitantes en clientes con diseño estratégico.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Navegación</h5>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#pricing">Precios</a></li>
+                    <li><a href="index.html#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Legal</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="terms.html">Términos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ascentio Digital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
