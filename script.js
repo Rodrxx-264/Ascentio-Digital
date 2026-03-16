@@ -151,20 +151,8 @@ document.addEventListener('click', (e) => {
 
 
 // ==================================================================
-// 5. SCROLL REVEAL
+// 5. SCROLL REVEAL (Replaced by GSAP below)
 // ==================================================================
-const revealAll = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-            revealObserver.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-
-revealAll.forEach(el => revealObserver.observe(el));
 
 
 // ==================================================================
@@ -470,6 +458,35 @@ defaultButtons.forEach(btn => {
         this.style.transform = `translate(0px, 0px) scale(1)`;
     });
 });
+
+// ==================================================================
+// 13.6 3D TILT EFFECT (Premium Cards)
+// ==================================================================
+const tiltElements = document.querySelectorAll('[data-tilt]');
+tiltElements.forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+        if (window.innerWidth < 1024) return;
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = ((y - centerY) / centerY) * -6; 
+        const rotateY = ((x - centerX) / centerX) * 6;
+        
+        el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        el.style.transition = 'transform 0.1s ease-out';
+    });
+
+    el.addEventListener('mouseleave', () => {
+        if (window.innerWidth < 1024) return;
+        el.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+        el.style.transition = 'transform 0.6s cubic-bezier(0.23, 1, 0.32, 1)';
+    });
+});
+
 // ==================================================================
 // 14. LANGUAGE SWITCH (for pages using data-i18n attributes)
 // ==================================================================
@@ -488,4 +505,97 @@ function switchLanguage(lang) {
     }
 
     if (newFile !== fileName) window.location.href = newFile;
+}
+
+// ==================================================================
+// 15. GSAP "WORK OF ART" ANIMATIONS
+// ==================================================================
+if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Initial Hero Animation Timeline
+    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+    
+    // Animate Hero elements on load
+    tl.fromTo('.hero h1', 
+        { y: 50, autoAlpha: 0 }, 
+        { y: 0, autoAlpha: 1, duration: 1.2, delay: 0.2 }
+    )
+    .fromTo('.hero .section-subtitle', 
+        { y: 30, autoAlpha: 0 }, 
+        { y: 0, autoAlpha: 1, duration: 1 }, 
+        "-=0.8"
+    )
+    .fromTo('.hero-cta a', 
+        { y: 20, autoAlpha: 0 }, 
+        { y: 0, autoAlpha: 1, duration: 0.8, stagger: 0.15 }, 
+        "-=0.6"
+    )
+    .fromTo('.trust-badge', 
+        { scale: 0.8, autoAlpha: 0 }, 
+        { scale: 1, autoAlpha: 1, duration: 0.6, stagger: 0.1, ease: "back.out(1.7)" }, 
+        "-=0.4"
+    );
+
+    // Parallax Orb Effect
+    gsap.to('.hero-orb', {
+        yPercent: 40,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".hero",
+            start: "top top",
+            end: "bottom top",
+            scrub: true
+        }
+    });
+
+    // Universal Section Reveal (Replaces old IntersectionObserver)
+    const sectionsToReveal = gsap.utils.toArray('.section-title, .section-subtitle, .about-story, .about-timeline, .reveal, .reveal-left, .reveal-right');
+    sectionsToReveal.forEach(sec => {
+        // Skip elements that are children of staggered grids (they are handled separately)
+        if (sec.parentElement && (
+            sec.parentElement.classList.contains('workflow-grid') || 
+            sec.parentElement.classList.contains('pricing-grid') || 
+            sec.parentElement.classList.contains('projects-grid') || 
+            sec.parentElement.classList.contains('team-grid') ||
+            sec.parentElement.classList.contains('trust-badges')
+        )) return;
+
+        gsap.fromTo(sec, 
+            { y: 40, autoAlpha: 0 },
+            {
+                y: 0, autoAlpha: 1, duration: 1, ease: "power2.out",
+                scrollTrigger: {
+                    trigger: sec,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            }
+        );
+    });
+
+    // Stagger Cards (Workflow, Pricing, Projects)
+    const cardGrids = ['.workflow-grid', '.pricing-grid', '.projects-grid', '.team-grid'];
+    cardGrids.forEach(gridSelector => {
+        const grid = document.querySelector(gridSelector);
+        if (grid) {
+            const cards = grid.children;
+            gsap.fromTo(cards, 
+                { y: 50, autoAlpha: 0, scale: 0.95 },
+                {
+                    y: 0, autoAlpha: 1, scale: 1, duration: 0.8, stagger: 0.15, ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: grid,
+                        start: "top 80%",
+                        toggleActions: "play none none none"
+                    }
+                }
+            );
+        }
+    });
+} else {
+    // Fallback: If GSAP fails to load, make everything visible immediately
+    console.warn("GSAP not loaded. Reverting to static visibility.");
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .hero h1, .hero .section-subtitle, .hero-cta a, .trust-badge')
+        .forEach(el => el.style.visibility = 'visible');
 }

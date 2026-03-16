@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA Beauty Atelier — Salón de Belleza Premium en Guatemala</title>
+  <meta name="description"
+    content="AURA Beauty Atelier — Salón de belleza premium en Zona 10, Ciudad de Guatemala. Cabello, uñas, maquillaje y tratamientos de nivel internacional. Agenda tu cita hoy.">
+  <meta name="keywords"
+    content="salón de belleza, Guatemala, uñas, cabello, maquillaje, balayage, keratina, zona 10, beauty salon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: { preflight: false },
+      prefix: 'tw-',
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-logo">AURA</div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Galería ampliada">
+  </div>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-aura fixed-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-aura" href="#">
+        <i class="fa-regular fa-gem tw-mr-2 tw-text-sm" style="color:#d6bfa4"></i>
+        Aura <span>Beauty Atelier</span>
+      </a>
+      <button class="navbar-toggler navbar-toggler-aura" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav tw-gap-1">
+          <li class="nav-item"><a class="nav-link nav-link-aura" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-aura" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-aura" href="#antes-despues">Resultados</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-aura" href="#equipo">Equipo</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-aura" href="#testimonios">Reseñas</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-aura" href="#visitanos">Ubicación</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-aura" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======== 1. HERO ======== -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-bg"
+      style="background-image:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1920&q=80')">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Aura Beauty Atelier</p>
+      <h1 class="hero-title">Donde la belleza se convierte en arte.</h1>
+      <p class="hero-sub">Cabello, uñas y estilo creados por expertos.</p>
+      <div class="hero-btns tw-flex tw-flex-wrap tw-justify-center tw-gap-4">
+        <a href="#galeria" class="btn-aura btn-aura-primary">Ver Galería</a>
+        <a href="#servicios" class="btn-aura btn-aura-outline">Ver Servicios</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======== 2. SERVICIOS ======== -->
+  <section class="services-section tw-py-24" id="servicios">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="section-tag">Experiencia Premium</p>
+        <h2>Nuestros Servicios</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-4">
+
+        <!-- Cabello -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-category-card">
+            <div class="service-category-header">
+              <i class="fa-solid fa-scissors"></i>
+              <h3>Cabello</h3>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Corte</div>
+                <div class="service-desc">Corte clásico o moderno con acabado profesional</div>
+              </div>
+              <div class="service-price">Q80</div>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Corte Premium</div>
+                <div class="service-desc">Consultoría + corte personalizado con estilista senior</div>
+              </div>
+              <div class="service-price">Q120</div>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Peinado</div>
+                <div class="service-desc">Peinado para evento, boda o sesión fotográfica</div>
+              </div>
+              <div class="service-price">Q150</div>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Coloración</div>
+                <div class="service-desc">Color completo con productos profesionales</div>
+              </div>
+              <div class="service-price">desde Q250</div>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Balayage</div>
+                <div class="service-desc">Técnica de iluminación natural a mano alzada</div>
+              </div>
+              <div class="service-price">desde Q450</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Uñas -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-category-card">
+            <div class="service-category-header">
+              <i class="fa-solid fa-hand-sparkles"></i>
+              <h3>Uñas</h3>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Manicure Clásico</div>
+                <div class="service-desc">Limpieza, forma y esmaltado perfecto</div>
+              </div>
+              <div class="service-price">Q60</div>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Pedicure</div>
+                <div class="service-desc">Cuidado completo para pies impecables</div>
+              </div>
+              <div class="service-price">Q80</div>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Uñas Acrílicas</div>
+                <div class="service-desc">Extensiones acrílicas con diseño a medida</div>
+              </div>
+              <div class="service-price">Q180</div>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Uñas Gel</div>
+                <div class="service-desc">Cobertura gel duradera con acabado espejo</div>
+              </div>
+              <div class="service-price">Q150</div>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Diseño Nail Art</div>
+                <div class="service-desc">Diseño artístico personalizado por uña</div>
+              </div>
+              <div class="service-price">desde Q30</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tratamientos -->
+        <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-category-card">
+            <div class="service-category-header">
+              <i class="fa-solid fa-spa"></i>
+              <h3>Tratamientos</h3>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Botox Capilar</div>
+                <div class="service-desc">Restauración intensiva de fibra capilar</div>
+              </div>
+              <div class="service-price">Q350</div>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Keratina</div>
+                <div class="service-desc">Alisado con keratina profesional brasileña</div>
+              </div>
+              <div class="service-price">Q400</div>
+            </div>
+            <div class="service-item">
+              <div>
+                <div class="service-name">Hidratación Profunda</div>
+                <div class="service-desc">Nutrición intensiva para cabello dañado</div>
+              </div>
+              <div class="service-price">Q200</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 3. GALERÍA ======== -->
+  <section class="gallery-section tw-py-24" id="galeria">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="section-tag">Portafolio</p>
+        <h2>Nuestro Trabajo</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Filters -->
+      <div class="gallery-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="gallery-filter-btn active" data-filter="all">Todo</button>
+        <button class="gallery-filter-btn" data-filter="nails">Uñas</button>
+        <button class="gallery-filter-btn" data-filter="hair">Cabello</button>
+        <button class="gallery-filter-btn" data-filter="updo">Peinados</button>
+        <button class="gallery-filter-btn" data-filter="color">Coloraciones</button>
+        <button class="gallery-filter-btn" data-filter="makeup">Maquillaje</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+        <div class="gallery-item" data-category="nails">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+            alt="Nail art elegante" loading="lazy">
+          <div class="gallery-item-overlay"><span>Nail Art</span></div>
+        </div>
+        <div class="gallery-item" data-category="hair">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+            alt="Cabello ondulado profesional" loading="lazy">
+          <div class="gallery-item-overlay"><span>Ondas Profesionales</span></div>
+        </div>
+        <div class="gallery-item" data-category="color">
+          <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=800&q=80"
+            alt="Balayage caramelo" loading="lazy">
+          <div class="gallery-item-overlay"><span>Balayage Caramelo</span></div>
+        </div>
+        <div class="gallery-item" data-category="nails">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80"
+            alt="Uñas acrílicas diseño" loading="lazy">
+          <div class="gallery-item-overlay"><span>Diseño Acrílico</span></div>
+        </div>
+        <div class="gallery-item" data-category="makeup">
+          <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=80"
+            alt="Maquillaje profesional" loading="lazy">
+          <div class="gallery-item-overlay"><span>Maquillaje Editorial</span></div>
+        </div>
+        <div class="gallery-item" data-category="updo">
+          <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80"
+            alt="Peinado elegante recogido" loading="lazy">
+          <div class="gallery-item-overlay"><span>Recogido Elegante</span></div>
+        </div>
+        <div class="gallery-item" data-category="color">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=80"
+            alt="Coloración fantasía" loading="lazy">
+          <div class="gallery-item-overlay"><span>Coloración Fantasía</span></div>
+        </div>
+        <div class="gallery-item" data-category="hair">
+          <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80"
+            alt="Corte moderno" loading="lazy">
+          <div class="gallery-item-overlay"><span>Corte Moderno</span></div>
+        </div>
+        <div class="gallery-item" data-category="nails">
+          <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=800&q=80"
+            alt="Diseño nail art premium" loading="lazy">
+          <div class="gallery-item-overlay"><span>Nail Art Premium</span></div>
+        </div>
+        <div class="gallery-item" data-category="makeup">
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80"
+            alt="Maquillaje natural" loading="lazy">
+          <div class="gallery-item-overlay"><span>Maquillaje Natural Glam</span></div>
+        </div>
+        <div class="gallery-item" data-category="updo">
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80"
+            alt="Peinado de boda" loading="lazy">
+          <div class="gallery-item-overlay"><span>Peinado Bridal</span></div>
+        </div>
+        <div class="gallery-item" data-category="hair">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80"
+            alt="Tratamiento capilar" loading="lazy">
+          <div class="gallery-item-overlay"><span>Tratamiento Capilar</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 4. ANTES Y DESPUÉS ======== -->
+  <section class="before-after-section tw-py-24" id="antes-despues">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="section-tag">Transformaciones</p>
+        <h2>Antes & Después</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-5 tw-justify-center">
+        <!-- Slider 1 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <p class="tw-text-center tw-mb-3 font-sub tw-text-sm tw-tracking-wider tw-uppercase"
+            style="color:var(--gold-dark)">Coloración</p>
+          <div class="ba-slider-container">
+            <img class="ba-after"
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80"
+              alt="Después">
+            <img class="ba-before"
+              src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&q=80"
+              alt="Antes">
+            <div class="ba-divider"></div>
+            <div class="ba-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+            <span class="ba-label ba-label-before">Antes</span>
+            <span class="ba-label ba-label-after">Después</span>
+          </div>
+        </div>
+        <!-- Slider 2 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <p class="tw-text-center tw-mb-3 font-sub tw-text-sm tw-tracking-wider tw-uppercase"
+            style="color:var(--gold-dark)">Uñas Acrílicas</p>
+          <div class="ba-slider-container">
+            <img class="ba-after"
+              src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80"
+              alt="Después">
+            <img class="ba-before"
+              src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=600&q=80"
+              alt="Antes">
+            <div class="ba-divider"></div>
+            <div class="ba-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+            <span class="ba-label ba-label-before">Antes</span>
+            <span class="ba-label ba-label-after">Después</span>
+          </div>
+        </div>
+        <!-- Slider 3 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <p class="tw-text-center tw-mb-3 font-sub tw-text-sm tw-tracking-wider tw-uppercase"
+            style="color:var(--gold-dark)">Tratamiento Capilar</p>
+          <div class="ba-slider-container">
+            <img class="ba-after"
+              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80"
+              alt="Después">
+            <img class="ba-before"
+              src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=600&q=80"
+              alt="Antes">
+            <div class="ba-divider"></div>
+            <div class="ba-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+            <span class="ba-label ba-label-before">Antes</span>
+            <span class="ba-label ba-label-after">Después</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 5. EQUIPO ======== -->
+  <section class="team-section tw-py-24" id="equipo">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="section-tag">Talento</p>
+        <h2>Nuestros Estilistas</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-4 tw-justify-center">
+        <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-card">
+            <div style="overflow:hidden">
+              <img class="team-photo"
+                src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=500&q=80"
+                alt="María López" loading="lazy">
+            </div>
+            <div class="team-info">
+              <div class="team-name">María López</div>
+              <div class="team-role">Especialista en Color</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-card">
+            <div style="overflow:hidden">
+              <img class="team-photo"
+                src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=500&q=80"
+                alt="Andrea Ruiz" loading="lazy">
+            </div>
+            <div class="team-info">
+              <div class="team-name">Andrea Ruiz</div>
+              <div class="team-role">Nail Artist</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-card">
+            <div style="overflow:hidden">
+              <img class="team-photo"
+                src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=500&q=80"
+                alt="Carla Mendoza" loading="lazy">
+            </div>
+            <div class="team-info">
+              <div class="team-name">Carla Mendoza</div>
+              <div class="team-role">Estilista Senior</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 6. TESTIMONIOS ======== -->
+  <section class="testimonials-section tw-py-24" id="testimonios">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="section-tag" style="color:var(--gold)">Experiencias</p>
+        <h2 style="color:var(--white)">Lo que dicen nuestras clientas</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="swiper testimonials-swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="testimonial-text">"El mejor lugar para uñas que he encontrado en Guatemala. La atención es
+                impecable y los diseños son verdaderas obras de arte. ¡No cambio este salón por nada!"</p>
+              <span class="testimonial-author">— Daniela Pérez</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="testimonial-text">"Me hicieron un balayage increíble. El color quedó exactamente como lo quería.
+                Se nota que trabajan con productos de primera y un talento excepcional."</p>
+              <span class="testimonial-author">— Valentina Morales</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="testimonial-text">"Me prepararon para mi boda y quedé espectacular. El peinado, el maquillaje…
+                todo fue perfecto. Las fotos salieron hermosas gracias a AURA."</p>
+              <span class="testimonial-author">— Sofía Castillo</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="testimonial-text">"La keratina que me aplicaron dejó mi cabello como seda. El ambiente del salón
+                es hermoso y relajante. Se siente como una experiencia de lujo accesible."</p>
+              <span class="testimonial-author">— Isabella Ramírez</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination tw-mt-8"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 7. INSTAGRAM WALL ======== -->
+  <section class="insta-section tw-py-16" id="instagram">
+    <div class="container-fluid tw-px-0">
+      <div class="section-heading tw-mb-8" data-aos="fade-up">
+        <p class="section-tag">Síguenos</p>
+        <h2><i class="fa-brands fa-instagram tw-mr-2"></i> @aurabeautyatelier</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="insta-grid">
+        <div class="insta-item"><img
+            src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=400&q=80"
+            alt="Instagram" loading="lazy">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item"><img
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=400&q=80"
+            alt="Instagram" loading="lazy">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item"><img
+            src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=400&q=80"
+            alt="Instagram" loading="lazy">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item"><img
+            src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=400&q=80"
+            alt="Instagram" loading="lazy">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item"><img
+            src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=400&q=80"
+            alt="Instagram" loading="lazy">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item"><img
+            src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=400&q=80"
+            alt="Instagram" loading="lazy">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 8. VISÍTANOS ======== -->
+  <section class="visit-section tw-py-24" id="visitanos">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="section-tag">Encuéntranos</p>
+        <h2>Visítanos</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-5">
+          <div class="visit-info-card">
+            <h3><i class="fa-regular fa-gem tw-mr-2"></i> AURA Beauty Atelier</h3>
+            <div class="visit-info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Zona 10, Ciudad de Guatemala<br>Guatemala</p>
+            </div>
+            <div class="visit-info-item">
+              <i class="fa-regular fa-clock"></i>
+              <div>
+                <p><strong>Lunes a Viernes</strong><br>9:00 AM – 7:00 PM</p>
+                <p class="tw-mt-2"><strong>Sábado</strong><br>9:00 AM – 6:00 PM</p>
+                <p class="tw-mt-2"><strong>Domingo</strong><br>Cerrado</p>
+              </div>
+            </div>
+            <div class="visit-info-item">
+              <i class="fa-solid fa-phone"></i>
+              <p>+502 2345 6789</p>
+            </div>
+            <div class="visit-info-item">
+              <i class="fa-regular fa-envelope"></i>
+              <p>hola@aurabeautyatelier.gt</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="visit-map-placeholder">
+            <i class="fa-solid fa-map-location-dot tw-text-4xl" style="color:var(--gold-dark)"></i>
+            <p class="tw-text-sm tw-text-gray-500">Zona 10, Ciudad de Guatemala</p>
+            <a href="https://maps.google.com/?q=Zona+10+Ciudad+de+Guatemala" target="_blank" rel="noopener"
+              class="btn-map">
+              <i class="fa-solid fa-diamond-turn-right"></i> Abrir en Google Maps
+            </a>
+            <a href="https://maps.google.com/?q=Zona+10+Ciudad+de+Guatemala" target="_blank" rel="noopener"
+              class="btn-map" style="background:transparent;color:var(--black);border-color:rgba(15,15,15,.2)">
+              <i class="fa-solid fa-route"></i> Cómo Llegar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 9. CONTACTO ======== -->
+  <section class="contact-section tw-py-24" id="contacto">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="section-tag">Reserva tu Cita</p>
+        <h2>Contacto</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-form-wrap" data-aos="fade-up" data-aos-delay="100">
+        <form id="contact-form">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <input type="text" class="form-control form-control-aura" placeholder="Tu nombre" required>
+            </div>
+            <div class="col-md-6">
+              <input type="tel" class="form-control form-control-aura" placeholder="Teléfono" required>
+            </div>
+            <div class="col-12">
+              <select class="form-control form-control-aura" required>
+                <option value="" disabled selected>Selecciona un servicio</option>
+                <option>Corte de Cabello</option>
+                <option>Coloración / Balayage</option>
+                <option>Peinado para Evento</option>
+                <option>Manicure / Pedicure</option>
+                <option>Uñas Acrílicas / Gel</option>
+                <option>Nail Art</option>
+                <option>Botox Capilar</option>
+                <option>Keratina</option>
+                <option>Hidratación Profunda</option>
+                <option>Maquillaje</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control form-control-aura" rows="4" placeholder="Tu mensaje (opcional)"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn-submit">Enviar Consulta</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 11. FOOTER ======== -->
+  <footer class="footer-aura">
+    <div class="container">
+      <div class="row g-4 tw-items-start">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <i class="fa-regular fa-gem tw-mr-2 tw-text-sm" style="color:#d6bfa4"></i>
+            Aura <span>Beauty Atelier</span>
+          </div>
+          <p class="tw-text-sm" style="color:rgba(255,255,255,.45);line-height:1.8">
+            Donde la belleza se convierte en arte.<br>
+            Cabello, uñas y estilo creados por expertos.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="tw-text-white tw-mb-4 tw-text-sm tw-tracking-widest tw-uppercase">Navegación</h5>
+          <div class="footer-links tw-flex tw-flex-col tw-gap-2">
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#equipo">Equipo</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+        </div>
+        <div class="col-lg-4 tw-text-lg-end">
+          <h5 class="tw-text-white tw-mb-4 tw-text-sm tw-tracking-widest tw-uppercase">Síguenos</h5>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+          <p class="tw-mt-4 tw-text-sm" style="color:rgba(255,255,255,.45)">
+            <i class="fa-solid fa-phone tw-mr-2"></i> +502 2345 6789<br>
+            <i class="fa-regular fa-envelope tw-mr-2"></i> hola@aurabeautyatelier.gt
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom tw-text-center">
+        &copy; 2026 AURA Beauty Atelier. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== 10. WHATSAPP FAB ======== -->
+  <a href="https://wa.me/50223456789?text=Hola,%20me%20gustaría%20agendar%20una%20cita%20en%20AURA%20Beauty%20Atelier"
+    target="_blank" rel="noopener" class="whatsapp-fab" aria-label="WhatsApp">
+    <span class="whatsapp-pulse"></span>
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ======== Scripts ======== -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

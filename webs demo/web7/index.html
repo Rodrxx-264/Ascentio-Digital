@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Origen 1820 Coffee Atelier | El Café de la Casa — Guatemala</title>
+  <meta name="description" content="Origen 1820 Coffee Atelier — Cafetería de especialidad en Ciudad de Guatemala. Granos seleccionados, tostado artesanal y baristas apasionados. Visítanos en Zona 4." />
+  <meta name="keywords" content="café especialidad Guatemala, cafetería Zona 4, espresso Guatemala, latte art, cold brew, pour over Guatemala" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- AOS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top" data-scroll-container>
+
+  <!-- ========== FLOATING WHATSAPP ========== -->
+  <a href="https://wa.me/50212345678?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20Origen%201820" 
+     class="whatsapp-float" target="_blank" aria-label="Contáctanos por WhatsApp" id="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Escríbenos</span>
+  </a>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+    <div class="container-fluid px-4 px-lg-5">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+        <div class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="16" cy="18" rx="11" ry="8" stroke="#a47149" stroke-width="1.5" fill="none"/>
+            <path d="M16 10 C16 10, 20 6, 24 8 C26 9, 25 12, 22 12 C19 12, 16 10, 16 10Z" stroke="#a47149" stroke-width="1.2" fill="none"/>
+            <ellipse cx="16" cy="18" rx="5" ry="3" stroke="#a47149" stroke-width="1" fill="none" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Origen</span>
+          <span class="logo-year">1820</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#historia">Nuestro Café</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="#especialidades">Especialidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#visitanos">Ubicación</a></li>
+        </ul>
+        <a href="#visitanos" class="btn btn-visit ms-lg-3">Visítanos hoy</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&q=90" alt="Barista preparando café de especialidad" class="hero-img" id="heroImg">
+    </div>
+    <div class="hero-content container" id="heroContent">
+      <div class="hero-badge" data-aos="fade-down" data-aos-duration="800">
+        <span class="badge-dot"></span>
+        Cafetería de Especialidad · Ciudad de Guatemala
+      </div>
+      <h1 class="hero-title" id="heroTitle">
+        El café es<br><em>una experiencia.</em>
+      </h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+        En Origen 1820 cada taza cuenta una historia.
+      </p>
+      <div class="hero-ctas" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+        <a href="#menu" class="btn-hero-primary">Explorar menú</a>
+        <a href="#historia" class="btn-hero-secondary">Descubrir nuestro café</a>
+      </div>
+      <div class="hero-trust" data-aos="fade-up" data-aos-delay="900">
+        <div class="trust-item">
+          <div class="trust-stars">★★★★★</div>
+          <div class="trust-text">4.9 / 5 estrellas</div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <div class="trust-number">+1,500</div>
+          <div class="trust-text">Clientes satisfechos</div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <div class="trust-number">100%</div>
+          <div class="trust-text">Granos de especialidad</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== BRAND BAR ========== -->
+  <div class="brand-bar">
+    <div class="container">
+      <div class="brand-bar-inner">
+        <span>Tostado Artesanal</span>
+        <span class="dot">·</span>
+        <span>Granos de Origen</span>
+        <span class="dot">·</span>
+        <span>Baristas Certificados</span>
+        <span class="dot">·</span>
+        <span>Métodos de Especialidad</span>
+        <span class="dot">·</span>
+        <span>Zona 4, Guatemala</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HISTORIA ========== -->
+  <section id="historia" class="section-historia">
+    <div class="container-fluid p-0">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 historia-img-col" data-aos="fade-right" data-aos-duration="1200">
+          <div class="historia-img-wrap">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900&q=85" alt="Historia de Origen 1820" class="historia-img">
+            <div class="historia-img-badge">
+              <span class="badge-year">Desde</span>
+              <span class="badge-number">1820</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 historia-text-col" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+          <div class="section-label">Nuestra Historia</div>
+          <h2 class="section-title">Una pasión que nació<br><em>entre montañas.</em></h2>
+          <p class="section-body">
+            Todo comenzó con una familia guatemalteca que cultivaba café en las faldas del volcán. Generaciones después, esa misma pasión por el grano perfecto vive en cada taza que servimos.
+          </p>
+          <p class="section-body">
+            En <strong>Origen 1820</strong> creemos que el café es mucho más que una bebida — es un ritual, una conversación, un momento de presencia plena. Por eso seleccionamos cada grano con el mismo cuidado con que se cultiva.
+          </p>
+          <div class="historia-stats">
+            <div class="stat-item">
+              <div class="stat-num">15+</div>
+              <div class="stat-label">Orígenes de café</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">6</div>
+              <div class="stat-label">Métodos de preparación</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">8</div>
+              <div class="stat-label">Baristas certificados</div>
+            </div>
+          </div>
+          <a href="#finca" class="btn-outline-cream">Nuestra filosofía <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FILOSOFÍA (DE LA FINCA A TU TAZA) ========== -->
+  <section id="finca" class="section-finca">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label light">Filosofía</div>
+        <h2 class="section-title light">De la finca a tu taza.</h2>
+        <p class="section-subtitle light">Un proceso artesanal que respeta cada etapa del café.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="finca-card">
+            <div class="finca-number">01</div>
+            <div class="finca-img-wrap">
+              <img src="https://images.unsplash.com/photo-1501770118606-b1d640526693?w=600&q=80" alt="Selección de granos" class="finca-img">
+            </div>
+            <h3 class="finca-title">Selección de granos</h3>
+            <p class="finca-text">Trabajamos directamente con fincas de altura en Huehuetenango y Antigua Guatemala, seleccionando solo los mejores granos de la cosecha.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
+          <div class="finca-card">
+            <div class="finca-number">02</div>
+            <div class="finca-img-wrap">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Tostado artesanal" class="finca-img">
+            </div>
+            <h3 class="finca-title">Tostado artesanal</h3>
+            <p class="finca-text">Cada lote es tostado a mano con curvas de temperatura precisas, desarrollando los sabores únicos de cada origen sin perder su esencia.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="finca-card">
+            <div class="finca-number">03</div>
+            <div class="finca-img-wrap">
+              <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="Preparación cuidadosa" class="finca-img">
+            </div>
+            <h3 class="finca-title">Preparación cuidadosa</h3>
+            <p class="finca-text">Nuestros baristas certificados dominan cada método de extracción, asegurando que cada taza sea una experiencia sensorial completa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENÚ PRINCIPAL ========== -->
+  <section id="menu" class="section-menu">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">La Carta</div>
+        <h2 class="section-title">Nuestro menú.</h2>
+        <p class="section-subtitle">Elaborado con amor, servido con pasión.</p>
+      </div>
+
+      <!-- Menu Tabs -->
+      <div class="menu-tabs-wrap" data-aos="fade-up" data-aos-delay="100">
+        <div class="menu-tabs" id="menuTabs">
+          <button class="menu-tab active" data-tab="clasico">Café Clásico</button>
+          <button class="menu-tab" data-tab="especialidad">Especialidad</button>
+          <button class="menu-tab" data-tab="bebidas">Bebidas Especiales</button>
+          <button class="menu-tab" data-tab="panaderia">Panadería</button>
+        </div>
+      </div>
+
+      <!-- Tab: Café Clásico -->
+      <div class="menu-content active" id="tab-clasico">
+        <div class="row g-3">
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up"><div class="menu-item-info"><h4>Espresso</h4><p>Intenso y aromático, extraído a la perfección</p></div><span class="menu-price">Q18</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="50"><div class="menu-item-info"><h4>Americano</h4><p>Espresso con agua caliente, suave y profundo</p></div><span class="menu-price">Q20</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="100"><div class="menu-item-info"><h4>Cappuccino</h4><p>Espresso, leche vaporizada y espuma sedosa</p></div><span class="menu-price">Q28</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="150"><div class="menu-item-info"><h4>Latte</h4><p>Espresso con leche texturizada y latte art</p></div><span class="menu-price">Q30</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="200"><div class="menu-item-info"><h4>Mocha</h4><p>Espresso, chocolate artesanal y leche cremosa</p></div><span class="menu-price">Q32</span></div></div>
+        </div>
+      </div>
+
+      <!-- Tab: Especialidad -->
+      <div class="menu-content" id="tab-especialidad">
+        <div class="row g-3">
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up"><div class="menu-item-info"><h4>Flat White</h4><p>Espresso doble con microespuma de leche</p></div><span class="menu-price">Q32</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="50"><div class="menu-item-info"><h4>Cold Brew</h4><p>Infusión fría de 18 horas, suave y concentrado</p></div><span class="menu-price">Q35</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="100"><div class="menu-item-info"><h4>V60 Pour Over</h4><p>Vertido manual, limpio y brillante</p></div><span class="menu-price">Q38</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="150"><div class="menu-item-info"><h4>Chemex</h4><p>Filtrado elegante, cuerpo ligero y complejo</p></div><span class="menu-price">Q40</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="200"><div class="menu-item-info"><h4>Aeropress</h4><p>Concentrado y versátil, rico en matices</p></div><span class="menu-price">Q38</span></div></div>
+        </div>
+      </div>
+
+      <!-- Tab: Bebidas Especiales -->
+      <div class="menu-content" id="tab-bebidas">
+        <div class="row g-3">
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up"><div class="menu-item-info"><h4>Matcha Latte</h4><p>Matcha ceremonial japonés con leche de avena</p></div><span class="menu-price">Q36</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="50"><div class="menu-item-info"><h4>Chai Latte</h4><p>Especias aromáticas con leche texturizada</p></div><span class="menu-price">Q34</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="100"><div class="menu-item-info"><h4>Chocolate artesanal</h4><p>Cacao orgánico guatemalteco con leche cremosa</p></div><span class="menu-price">Q30</span></div></div>
+        </div>
+      </div>
+
+      <!-- Tab: Panadería -->
+      <div class="menu-content" id="tab-panaderia">
+        <div class="row g-3">
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up"><div class="menu-item-info"><h4>Croissant</h4><p>Mantequilla francesa, hojaldrado y dorado</p></div><span class="menu-price">Q22</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="50"><div class="menu-item-info"><h4>Croissant de almendra</h4><p>Relleno de crema de almendra tostada</p></div><span class="menu-price">Q26</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="100"><div class="menu-item-info"><h4>Pan de chocolate</h4><p>Pain au chocolat con chocolate 70% cacao</p></div><span class="menu-price">Q24</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="150"><div class="menu-item-info"><h4>Cheesecake</h4><p>Cremoso, con base de galleta artesanal</p></div><span class="menu-price">Q28</span></div></div>
+          <div class="col-lg-6"><div class="menu-item" data-aos="fade-up" data-aos-delay="200"><div class="menu-item-info"><h4>Tarta artesanal</h4><p>Del día, elaborada con ingredientes de temporada</p></div><span class="menu-price">Q30</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ESPECIALIDADES ========== -->
+  <section id="especialidades" class="section-especialidades">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label light">Lo mejor de la casa</div>
+        <h2 class="section-title light">Nuestras especialidades.</h2>
+      </div>
+      <div class="swiper especialidades-swiper" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="esp-card">
+              <div class="esp-img-wrap">
+                <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=700&q=85" alt="Latte Art" class="esp-img">
+                <div class="esp-overlay">
+                  <span class="esp-tag">Firma de la casa</span>
+                </div>
+              </div>
+              <div class="esp-info">
+                <h3>Latte Art</h3>
+                <p>Espresso de especialidad con leche texturizada y diseños únicos</p>
+                <span class="esp-price">Q30</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="esp-card">
+              <div class="esp-img-wrap">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700&q=85" alt="Cold Brew" class="esp-img">
+                <div class="esp-overlay">
+                  <span class="esp-tag">Infusión 18h</span>
+                </div>
+              </div>
+              <div class="esp-info">
+                <h3>Cold Brew</h3>
+                <p>18 horas de infusión fría con granos de Huehuetenango</p>
+                <span class="esp-price">Q35</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="esp-card">
+              <div class="esp-img-wrap">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=85" alt="Chemex Pour Over" class="esp-img">
+                <div class="esp-overlay">
+                  <span class="esp-tag">Método especial</span>
+                </div>
+              </div>
+              <div class="esp-info">
+                <h3>Chemex</h3>
+                <p>Filtrado en Chemex original, notas florales y cítricos</p>
+                <span class="esp-price">Q40</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="esp-card">
+              <div class="esp-img-wrap">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=700&q=85" alt="Croissant artesanal" class="esp-img">
+                <div class="esp-overlay">
+                  <span class="esp-tag">Repostería</span>
+                </div>
+              </div>
+              <div class="esp-info">
+                <h3>Croissant artesanal</h3>
+                <p>Hojaldrado de mantequilla francesa, recién horneado cada mañana</p>
+                <span class="esp-price">Q22</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCIA ========== -->
+  <section id="experiencia" class="section-experiencia">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
+          <div class="section-label">El espacio</div>
+          <h2 class="section-title">Un lugar para<br><em>disfrutar.</em></h2>
+          <p class="section-body">Diseñamos cada rincón de nuestra cafetería para que te sientas en casa. Luz cálida, madera natural, cerámica artesanal y el aroma del café recién preparado te reciben cada mañana.</p>
+          <p class="section-body">Ya sea que vengas a trabajar, a conversar o simplemente a desconectarte, en Origen 1820 tienes un espacio que te pertenece.</p>
+          <div class="exp-features">
+            <div class="exp-feat"><i class="fas fa-wifi"></i> WiFi de alta velocidad</div>
+            <div class="exp-feat"><i class="fas fa-plug"></i> Enchufes en todas las mesas</div>
+            <div class="exp-feat"><i class="fas fa-music"></i> Música curada en vivo</div>
+            <div class="exp-feat"><i class="fas fa-leaf"></i> Ambiente acogedor y tranquilo</div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="exp-gallery-grid">
+            <div class="exp-grid-item exp-grid-tall">
+              <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80" alt="Interior Origen 1820">
+            </div>
+            <div class="exp-grid-item">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Mesa de trabajo en la cafetería">
+            </div>
+            <div class="exp-grid-item">
+              <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80" alt="Barista en Origen 1820">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SENSORIAL ========== -->
+  <section id="sensorial" class="section-sensorial">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label light">Notas de sabor</div>
+        <h2 class="section-title light">Una sinfonía<br><em>en cada sorbo.</em></h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="0">
+          <div class="sensorial-card">
+            <div class="sensorial-icon">🍫</div>
+            <h4>Chocolate</h4>
+            <p>Notas oscuras de cacao puro guatemalteco</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="sensorial-card">
+            <div class="sensorial-icon">🍯</div>
+            <h4>Caramelo</h4>
+            <p>Dulzura natural desarrollada en el tostado</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="sensorial-card">
+            <div class="sensorial-icon">🍒</div>
+            <h4>Frutos rojos</h4>
+            <p>Acidez brillante de granos de altura</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="sensorial-card">
+            <div class="sensorial-icon">🍋</div>
+            <h4>Cítricos</h4>
+            <p>Notas vivas y refrescantes del terroir</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS ========== -->
+  <section id="testimonios" class="section-testimonios">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">Opiniones</div>
+        <h2 class="section-title">Lo que dicen nuestros<br><em>visitantes.</em></h2>
+      </div>
+      <div class="swiper testimonios-swiper" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"El mejor café de especialidad que he probado en Guatemala. El latte art es impresionante y el ambiente es simplemente perfecto para trabajar."</p>
+              <div class="testi-author">
+                <div class="testi-avatar">CM</div>
+                <div><strong>Carlos Mendoza</strong><br><small>Diseñador, Zona 10</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"El Cold Brew de Origen 1820 no tiene comparación. Vengo cada semana y cada vez el sabor me sorprende más. Un lugar único en Guatemala."</p>
+              <div class="testi-author">
+                <div class="testi-avatar">SR</div>
+                <div><strong>Sofía Ramírez</strong><br><small>Arquitecta, Zona 14</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"El Chemex aquí es una obra de arte. Notas florales increíbles. Los croissants son los mejores que he probado en la ciudad. 100% recomendado."</p>
+              <div class="testi-author">
+                <div class="testi-avatar">AP</div>
+                <div><strong>Andrés Portillo</strong><br><small>Fotógrafo, Zona 4</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Un espacio que inspira. Los baristas son verdaderos artistas y el café guatemalteco que sirven tiene una calidad que pocas cafeterías en Centroamérica igualan."</p>
+              <div class="testi-author">
+                <div class="testi-avatar">ML</div>
+                <div><strong>María López</strong><br><small>Escritora, Antigua</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALERÍA ========== -->
+  <section id="galeria" class="section-galeria">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">Momentos</div>
+        <h2 class="section-title">Galería.</h2>
+      </div>
+      <div class="galeria-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="g-item g-tall">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=80" alt="Latte art">
+          <div class="g-overlay"><span>Latte Art</span></div>
+        </div>
+        <div class="g-item">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=700&q=80" alt="Granos de café">
+          <div class="g-overlay"><span>Granos de origen</span></div>
+        </div>
+        <div class="g-item">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&q=80" alt="Preparación de café">
+          <div class="g-overlay"><span>Preparación</span></div>
+        </div>
+        <div class="g-item g-wide">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1000&q=80" alt="Ambiente cafetería">
+          <div class="g-overlay"><span>Nuestro espacio</span></div>
+        </div>
+        <div class="g-item">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=700&q=80" alt="Barista">
+          <div class="g-overlay"><span>Baristas</span></div>
+        </div>
+        <div class="g-item">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=700&q=80" alt="Repostería">
+          <div class="g-overlay"><span>Repostería artesanal</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INSTAGRAM ========== -->
+  <section id="instagram" class="section-instagram">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <div class="section-label">Síguenos</div>
+        <h2 class="section-title">@origen1820</h2>
+        <p class="section-subtitle">Momentos de café, todos los días</p>
+      </div>
+      <div class="ig-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="ig-item"><img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=400&q=80" alt="IG 1"><div class="ig-overlay"><i class="fab fa-instagram"></i></div></div>
+        <div class="ig-item"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80" alt="IG 2"><div class="ig-overlay"><i class="fab fa-instagram"></i></div></div>
+        <div class="ig-item"><img src="https://images.unsplash.com/photo-1501770118606-b1d640526693?w=400&q=80" alt="IG 3"><div class="ig-overlay"><i class="fab fa-instagram"></i></div></div>
+        <div class="ig-item"><img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=400&q=80" alt="IG 4"><div class="ig-overlay"><i class="fab fa-instagram"></i></div></div>
+        <div class="ig-item"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&q=80" alt="IG 5"><div class="ig-overlay"><i class="fab fa-instagram"></i></div></div>
+        <div class="ig-item"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&q=80" alt="IG 6"><div class="ig-overlay"><i class="fab fa-instagram"></i></div></div>
+      </div>
+      <div class="text-center mt-4" data-aos="fade-up">
+        <a href="https://instagram.com/origen1820" target="_blank" class="btn-outline-dark-custom">
+          <i class="fab fa-instagram me-2"></i> Seguir en Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VISÍTANOS ========== -->
+  <section id="visitanos" class="section-visitanos">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label light">Encuéntranos</div>
+        <h2 class="section-title light">Te esperamos.</h2>
+        <p class="section-subtitle light">Ven a vivir la experiencia Origen 1820</p>
+      </div>
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5" data-aos="fade-right" data-aos-duration="900">
+          <div class="visita-info-card">
+            <div class="visita-block">
+              <div class="visita-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Dirección</h4>
+                <p>4a Avenida 12-38, Zona 4<br>Ciudad de Guatemala</p>
+              </div>
+            </div>
+            <div class="visita-block">
+              <div class="visita-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4>Horarios</h4>
+                <div class="horario-row"><span>Lunes — Viernes</span><span>7:00 AM – 8:00 PM</span></div>
+                <div class="horario-row"><span>Sábado</span><span>8:00 AM – 9:00 PM</span></div>
+                <div class="horario-row"><span>Domingo</span><span>8:00 AM – 6:00 PM</span></div>
+              </div>
+            </div>
+            <div class="visita-block">
+              <div class="visita-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Contacto</h4>
+                <p>+502 1234-5678<br>hola@origen1820.gt</p>
+              </div>
+            </div>
+            <div class="visita-ctas">
+              <a href="https://maps.google.com/?q=Zona+4+Ciudad+de+Guatemala" target="_blank" class="btn-visit-primary">
+                <i class="fas fa-map me-2"></i>Cómo llegar
+              </a>
+              <a href="https://maps.google.com/?q=Zona+4+Ciudad+de+Guatemala" target="_blank" class="btn-visit-outline">
+                <i class="fab fa-google me-2"></i>Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15444.123456789!2d-90.5133!3d14.6349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3b2cbc1f3a5%3A0xabcdef1234567890!2sZona+4%2C+Guatemala+City%2C+Guatemala!5e0!3m2!1ses!2sgt!4v1234567890"
+              width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Mapa Origen 1820">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer-premium">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <a href="#top" class="d-flex align-items-center gap-2 mb-3">
+                <div class="logo-icon">
+                  <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                    <ellipse cx="16" cy="18" rx="11" ry="8" stroke="#a47149" stroke-width="1.5" fill="none"/>
+                    <path d="M16 10 C16 10, 20 6, 24 8 C26 9, 25 12, 22 12 C19 12, 16 10, 16 10Z" stroke="#a47149" stroke-width="1.2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="logo-text"><span class="logo-name">Origen</span><span class="logo-year">1820</span></div>
+              </a>
+              <p class="footer-desc">Cafetería de especialidad en el corazón de Ciudad de Guatemala. Cada taza, una historia.</p>
+              <div class="footer-socials">
+                <a href="https://instagram.com/origen1820" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/origen1820" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://tiktok.com/@origen1820" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6">
+            <h5 class="footer-heading">Menú</h5>
+            <ul class="footer-links">
+              <li><a href="#menu">Café Clásico</a></li>
+              <li><a href="#menu">Especialidad</a></li>
+              <li><a href="#menu">Bebidas</a></li>
+              <li><a href="#menu">Panadería</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6">
+            <h5 class="footer-heading">Café</h5>
+            <ul class="footer-links">
+              <li><a href="#historia">Nuestra historia</a></li>
+              <li><a href="#finca">Filosofía</a></li>
+              <li><a href="#experiencia">Experiencia</a></li>
+              <li><a href="#galeria">Galería</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="footer-heading">Visítanos</h5>
+            <div class="footer-contact">
+              <p><i class="fas fa-map-marker-alt me-2"></i>4a Avenida 12-38, Zona 4<br>Ciudad de Guatemala</p>
+              <p><i class="fas fa-phone me-2"></i>+502 1234-5678</p>
+              <p><i class="fas fa-envelope me-2"></i>hola@origen1820.gt</p>
+              <p><i class="fas fa-clock me-2"></i>Lun–Vie: 7:00–20:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>© 2026 Origen 1820 Coffee Atelier · El Café de la Casa · Guatemala</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>Diseñado con <span style="color:#a47149">♥</span> en Ciudad de Guatemala</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

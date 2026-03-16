@@ -46,6 +46,22 @@
                     <li><a href="#about">Nosotros</a></li>
                     <li><a href="#projects">Proyectos</a></li>
                     <li><a href="#contact" class="btn btn-sm">Contactar</a></li>
+                    <li class="social-links-nav"
+                        style="display: flex; gap: 12px; align-items: center; margin-left: 8px;">
+                        <a href="https://www.instagram.com/somosascentio/" target="_blank" aria-label="Instagram"
+                            class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a>
+                        <a href="https://www.facebook.com/profile.php?id=61582753721089" target="_blank"
+                            aria-label="Facebook" class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg></a>
+                    </li>
                     <li class="lang-switch">
                         <a href="index.html" class="lang-btn active" title="Español">ES</a>
                         <a href="index-en.html" class="lang-btn" title="English">EN</a>
@@ -149,7 +165,7 @@
             <p class="section-subtitle reveal">Modelos escalables diseñados para fundadores que exigen rendimiento desde
                 el primer día.</p>
             <div class="pricing-grid">
-                <div class="pricing-card reveal">
+                <div class="pricing-card reveal" data-tilt>
                     <h3>Plan Inicial</h3>
                     <div class="price">Q50 <span>/ pago único</span></div>
                     <ul class="features-list">
@@ -157,30 +173,33 @@
                         <li>Botón directo a WhatsApp</li>
                         <li>Diseño basado en plantilla</li>
                         <li>Entrega en 24 horas</li>
+                        <li>Garantia 3 meses</li>
                     </ul>
                     <a href="#contact" class="btn">Elegir Plan</a>
                 </div>
-                <div class="pricing-card featured reveal">
+                <div class="pricing-card featured reveal" data-tilt>
                     <h3>Plan Profesional</h3>
-                    <div class="price">Q150 <span>/ pago único</span></div>
+                    <div class="price">Q300 <span>/ pago único</span></div>
                     <ul class="features-list">
                         <li>Landing Completa (5 Secciones)</li>
                         <li>Formulario de Contacto</li>
                         <li>Diseño 100% Personalizado</li>
                         <li>Optimización SEO Básica</li>
                         <li>Entrega en 3 días</li>
+                        <li>Garantia 6 meses</li>
                     </ul>
                     <a href="#contact" class="btn">Elegir Plan</a>
                 </div>
-                <div class="pricing-card reveal">
+                <div class="pricing-card reveal" data-tilt>
                     <h3>Plan Premium</h3>
-                    <div class="price">Q300 <span>/ pago único</span></div>
+                    <div class="price">Q500 <span>/ pago único</span></div>
                     <ul class="features-list">
                         <li>Secciones Ilimitadas</li>
-                        <li>Integración Email Marketing</li>
                         <li>Copywriting Persuasivo</li>
                         <li>Analytics Avanzado</li>
-                        <li>Soporte Prioritario</li>
+                        <li>Soporte 24/7</li>
+                        <li>Dominio y host propio (primer año gratis)</li>
+                        <li>Garantia 1 año</li>
                     </ul>
                     <a href="#contact" class="btn">Elegir Plan</a>
                 </div>
@@ -317,39 +336,128 @@
     <!-- PROJECTS -->
     <section id="projects">
         <div class="container">
-            <h2 class="section-title reveal">Proyectos Reales</h2>
-            <p class="section-subtitle reveal">Páginas que ya están generando resultados para nuestros clientes.</p>
+            <h2 class="section-title reveal">Galería de Soluciones</h2>
+            <p class="section-subtitle reveal">Explora nuestra colección de demos tácticos. Cada página es una pieza de
+                ingeniería visual diseñada para sectores específicos.</p>
             <div class="projects-grid">
-                <div class="project-card reveal">
-                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop"
-                        alt="El Dragón Feliz Restaurant" class="project-img" loading="lazy" width="600" height="400">
+                <!-- Project 1: Medical -->
+                <div class="project-card reveal" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop"
+                        alt="Clínica Médica Prados VH" class="project-img" loading="lazy">
                     <div class="project-content">
                         <div class="project-tags">
-                            <span class="project-tag">Restaurante</span>
-                            <span class="project-tag">Menú Digital</span>
+                            <span class="project-tag">Salud</span>
+                            <span class="project-tag">Médico</span>
                         </div>
-                        <h3>El Dragón Feliz</h3>
-                        <p>Desarrollo de sitio web corporativo para restaurante, digitalización de menú y optimización
-                            de presencia local.</p>
-                        <a href="https://rodrxx-264.github.io/ELDRAGONFELIZ/index.html" target="_blank" rel="noopener"
-                            class="btn btn-sm" style="width: 100%; text-align: center; margin-top: 8px;">Ver Proyecto
-                            →</a>
+                        <h3>Clínica Prados VH</h3>
+                        <p>Diseño institucional para clínicas, facilitando la confianza y agendamiento de citas.</p>
+                        <a href="webs demo/web1/index.html" target="_blank" rel="noopener" class="btn btn-sm"
+                            style="width: 100%;">Ver Demo →</a>
                     </div>
                 </div>
-                <div class="project-card reveal">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop"
-                        alt="Sneaker Shop" class="project-img" loading="lazy" width="600" height="400">
+                <!-- Project 2: Auto Repair -->
+                <div class="project-card reveal" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2072&auto=format&fit=crop"
+                        alt="Taller Mecánico Expertos" class="project-img" loading="lazy">
                     <div class="project-content">
                         <div class="project-tags">
-                            <span class="project-tag">E-commerce</span>
-                            <span class="project-tag">Catálogo</span>
+                            <span class="project-tag">Automotriz</span>
+                            <span class="project-tag">Servicios</span>
                         </div>
-                        <h3>Sneaker Shop</h3>
-                        <p>Catálogo digital interactivo para calzado deportivo con galería responsive y experiencia de
-                            usuario fluida.</p>
-                        <a href="https://rodrxx-264.github.io/SNEAKERSHOP/" target="_blank" rel="noopener"
-                            class="btn btn-sm" style="width: 100%; text-align: center; margin-top: 8px;">Ver Proyecto
-                            →</a>
+                        <h3>Taller Automotriz</h3>
+                        <p>Plataforma robusta para talleres, enfocada en servicios mecánicos y visibilidad local.</p>
+                        <a href="webs demo/web3/index.html" target="_blank" rel="noopener" class="btn btn-sm"
+                            style="width: 100%;">Ver Demo →</a>
+                    </div>
+                </div>
+                <!-- Project 3: Pizza -->
+                <div class="project-card reveal" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop"
+                        alt="Pizza Vulcano" class="project-img" loading="lazy">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Restaurantes</span>
+                            <span class="project-tag">Delivery</span>
+                        </div>
+                        <h3>Pizza Vulcano</h3>
+                        <p>Landing page apetecible con menú digital optimizado para pedidos rápidos.</p>
+                        <a href="webs demo/web4/index.html" target="_blank" rel="noopener" class="btn btn-sm"
+                            style="width: 100%;">Ver Demo →</a>
+                    </div>
+                </div>
+                <!-- Project 4: Tacos -->
+                <div class="project-card reveal" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=2080&auto=format&fit=crop"
+                        alt="TACO FUEGO MX" class="project-img" loading="lazy">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Gastronomía</span>
+                            <span class="project-tag">Promociones</span>
+                        </div>
+                        <h3>TACO FUEGO MX</h3>
+                        <p>Experiencia visual vibrante diseñada para maximizar ventas en el sector de alimentos.</p>
+                        <a href="webs demo/web5/index.html" target="_blank" rel="noopener" class="btn btn-sm"
+                            style="width: 100%;">Ver Demo →</a>
+                    </div>
+                </div>
+                <!-- Project 5: Barber -->
+                <div class="project-card reveal" data-tilt>
+                    <img src="https://c.pxhere.com/photos/19/3a/barbershop_continued_meyers_usa-910428.jpg!d"
+                        alt="Crown Legacy Barber Lounge" class="project-img" loading="lazy">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Lifestyle</span>
+                            <span class="project-tag">Lujo</span>
+                        </div>
+                        <h3>Crown Legacy Barber</h3>
+                        <p>Interfaz de lujo para barberías premium, destacando estilo y exclusividad.</p>
+                        <a href="webs demo/web6/index.html" target="_blank" rel="noopener" class="btn btn-sm"
+                            style="width: 100%;">Ver Demo →</a>
+                    </div>
+                </div>
+                <!-- Project 6: Coffee -->
+                <div class="project-card reveal" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop"
+                        alt="Origen 1820 Coffee Atelier" class="project-img" loading="lazy">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Cafetería</span>
+                            <span class="project-tag">Especialidad</span>
+                        </div>
+                        <h3>Origen 1820 Coffee</h3>
+                        <p>Branding digital para cafeterías de autor, comunicando origen y calidad superior.</p>
+                        <a href="webs demo/web7/index.html" target="_blank" rel="noopener" class="btn btn-sm"
+                            style="width: 100%;">Ver Demo →</a>
+                    </div>
+                </div>
+                <!-- Project 7: Beauty -->
+                <div class="project-card reveal" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?q=80&w=2070&auto=format&fit=crop"
+                        alt="AURA Beauty Atelier" class="project-img" loading="lazy">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Belleza</span>
+                            <span class="project-tag">Premium</span>
+                        </div>
+                        <h3>AURA Beauty Atelier</h3>
+                        <p>Diseño estético y elegante para salones de belleza y spas de alta gama.</p>
+                        <a href="webs demo/web8/index.html" target="_blank" rel="noopener" class="btn btn-sm"
+                            style="width: 100%;">Ver Demo →</a>
+                    </div>
+                </div>
+                <!-- Project 8: Repair -->
+                <div class="project-card reveal" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop"
+                        alt="FixLab Pro" class="project-img" loading="lazy">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Tech</span>
+                            <span class="project-tag">Reparación</span>
+                        </div>
+                        <h3>FixLab Pro</h3>
+                        <p>Soporte técnico y reparación profesional con un enfoque digital moderno.</p>
+                        <a href="webs demo/web9/index.html" target="_blank" rel="noopener" class="btn btn-sm"
+                            style="width: 100%;">Ver Demo →</a>
                     </div>
                 </div>
             </div>
@@ -434,8 +542,8 @@
                                 <rect x="2" y="4" width="20" height="16" rx="2" />
                                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                             </svg>
-                            <a href="mailto:contactossdigitalesgt@gmail.com"
-                                style="color: inherit;">contactossdigitalesgt@gmail.com</a>
+                            <a href="mailto:ascentiodigital@gmail.com"
+                                style="color: inherit;">ascentiodigital@gmail.com</a>
                         </li>
                         <li>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -454,15 +562,15 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" action="https://codefreeform.com/api/contact-api/" method="POST">
+                <form class="contact-form" action="O" method="POST">
                     <input type="hidden" name="access_key" value="7A462C">
                     <input type="text" name="_gotcha" style="display:none" autocomplete="off">
                     <input type="text" name="name" placeholder="Tu Nombre" required aria-label="Nombre">
                     <input type="email" name="email" placeholder="Tu Email" required aria-label="Email">
                     <select name="plan" aria-label="Seleccionar Plan">
                         <option value="Plan Inicial (Q50)">Plan Inicial (Q50)</option>
-                        <option value="Plan Profesional (Q150)">Plan Profesional (Q150)</option>
-                        <option value="Plan Premium (Q300)">Plan Premium (Q300)</option>
+                        <option value="Plan Profesional (Q150)">Plan Profesional (Q300)</option>
+                        <option value="Plan Premium (Q300)">Plan Premium (Q500)</option>
                         <option value="Otro">Otro</option>
                     </select>
                     <textarea name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto..." required
@@ -491,15 +599,30 @@
                 </ul>
             </div>
             <div class="footer-col">
-                <h5>Legal</h5>
+                <h5>Legales & Redes</h5>
                 <ul class="footer-links">
                     <li><a href="#">Privacidad</a></li>
                     <li><a href="terms.html">Términos</a></li>
                 </ul>
+                <div class="footer-social" style="display: flex; gap: 14px; margin-top: 20px;">
+                    <a href="https://www.instagram.com/somosascentio/" target="_blank" aria-label="Instagram"
+                        class="social-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg></a>
+                    <a href="https://www.facebook.com/profile.php?id=61582753721089" target="_blank"
+                        aria-label="Facebook" class="social-icon"><svg width="22" height="22" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Ascentio Digital — Hecho con ❤️ desde Guatemala.</p>
+            <p>&copy; 2026 Ascentio Digital — Hecho con ❤️ desde Guatemala.</p>
         </div>
     </footer>
 
@@ -522,6 +645,10 @@
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
         </svg>
     </a>
+
+    <!-- External Animation Libraries (GSAP) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js" defer></script>
 </body>
 

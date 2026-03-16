@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica Prados VH | Excelencia en Salud</title>
+    <meta name="description" content="La mejor atención en salud en Clínica Médica Prados VH. Ofrecemos Consulta General, Pediatría, Odontología y Exámenes Médicos con tecnología innovadora y un entorno seguro.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Phosphor Icons for premium iconography -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="ph-bold ph-heartbeat"></i>
+                Prados VH<span>.</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#galeria">Instalaciones</a>
+                <a href="#cita" class="btn btn-primary">Agendar Cita</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="ph-bold ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <button class="close-menu" aria-label="Cerrar menú">
+                <i class="ph-bold ph-x"></i>
+            </button>
+            <nav class="mobile-nav-links">
+                <a href="#inicio" class="mobile-link">Inicio</a>
+                <a href="#servicios" class="mobile-link">Servicios</a>
+                <a href="#nosotros" class="mobile-link">Nosotros</a>
+                <a href="#galeria" class="mobile-link">Instalaciones</a>
+                <a href="#cita" class="btn btn-primary mobile-btn">Agendar Cita</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-text fade-in-up">
+                    <div class="badge">Atención Médica Innovadora</div>
+                    <h1>Tu salud en las <br><span class="highlight">mejores manos</span></h1>
+                    <p>En Clínica Médica Prados VH combinamos la tecnología de vanguardia con la calidez humana. Te brindamos un entorno seguro y profesional para ti y tu familia.</p>
+                    <div class="hero-actions">
+                        <a href="#cita" class="btn btn-primary btn-lg">Haz una cita hoy</a>
+                        <a href="#servicios" class="btn btn-secondary btn-lg">Nuestros servicios</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">+10k</span>
+                            <span class="stat-label">Pacientes Satisfechos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Especialistas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in-up delay-1">
+                    <div class="hero-image-wrapper">
+                        <img src="img/foto1.jpg" alt="Instalaciones de Clínica Médica Prados VH" class="hero-main-img">
+                    </div>
+                    <div class="glass-card main-hero-card">
+                        <div class="card-header">
+                            <div class="status-dot"></div>
+                            <span>Disponibilidad Inmediata</span>
+                        </div>
+                        <div class="card-body">
+                            <i class="ph-duotone ph-stethoscope icon-lg"></i>
+                            <h3>Consulta General</h3>
+                            <p>Recibe atención personalizada sin largas esperas.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card secondary-hero-card floating">
+                        <i class="ph-fill ph-check-circle" style="color: var(--success); font-size: 1.5rem;"></i>
+                        <div>
+                            <h4>Certificados</h4>
+                            <p>Máxima Seguridad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="services section-padding">
+            <div class="container">
+                <div class="section-heading text-center fade-in-up">
+                    <span class="subtitle">Especialidades</span>
+                    <h2>Nuestros Servicios Integrales</h2>
+                    <p>Cuidamos de cada aspecto de tu salud con profesionales altamente capacitados en instalaciones modernas.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card tilt-card fade-in-up">
+                        <div class="card-icon blue-gradient">
+                            <i class="ph-duotone ph-first-aid"></i>
+                        </div>
+                        <h3>Consulta General</h3>
+                        <p>Evaluación médica completa para el diagnóstico y tratamiento de enfermedades comunes y prevención en salud.</p>
+                        <a href="#cita" class="learn-more">Agendar <i class="ph-bold ph-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card tilt-card fade-in-up delay-1">
+                        <div class="card-icon light-blue-gradient">
+                            <i class="ph-duotone ph-baby"></i>
+                        </div>
+                        <h3>Pediatría</h3>
+                        <p>Cuidado especializado para los más pequeños, desde recién nacidos hasta adolescentes, en un ambiente amigable.</p>
+                        <a href="#cita" class="learn-more">Agendar <i class="ph-bold ph-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card tilt-card fade-in-up delay-2">
+                        <div class="card-icon deep-blue-gradient">
+                            <i class="ph-duotone ph-tooth"></i>
+                        </div>
+                        <h3>Odontología</h3>
+                        <p>Tratamientos dentales integrales, estética, prevención y salud bucodental con equipos de última generación.</p>
+                        <a href="#cita" class="learn-more">Agendar <i class="ph-bold ph-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card tilt-card fade-in-up delay-3">
+                        <div class="card-icon cyan-gradient">
+                            <i class="ph-duotone ph-test-tube"></i>
+                        </div>
+                        <h3>Exámenes Médicos</h3>
+                        <p>Laboratorio clínico preciso y rápido. Realizamos todo tipo de análisis para apoyar un diagnóstico certero.</p>
+                        <a href="#cita" class="learn-more">Agendar <i class="ph-bold ph-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info / Trust Section -->
+        <section id="nosotros" class="trust section-padding bg-light">
+            <div class="container trust-container">
+                <div class="trust-image fade-in-up">
+                    <div class="image-wrapper">
+                        <div class="abstract-clinic-img">
+                            <img src="img/foto2.jpg" alt="Interior de la clínica" class="about-main-img">
+                            <div class="glass-overlay">
+                                <i class="ph-duotone ph-shield-check"></i>
+                                <h3>Confianza y Seguridad</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trust-content fade-in-up delay-1">
+                    <span class="subtitle">¿Por qué elegirnos?</span>
+                    <h2>Innovación y empatía en cada consulta</h2>
+                    <p>En Prados VH entendemos que la salud es lo más importante. Por eso hemos diseñado un espacio que no solo cuenta con la mejor tecnología médica, sino que te hace sentir seguro, escuchado y valorado.</p>
+                    
+                    <ul class="feature-list">
+                        <li>
+                            <i class="ph-fill ph-check-circle"></i>
+                            <div>
+                                <h4>Tecnología de Punta</h4>
+                                <p>Equipamiento moderno para diagnósticos precisos.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-check-circle"></i>
+                            <div>
+                                <h4>Protocolos de Higiene</h4>
+                                <p>Estándares internacionales de bioseguridad.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-check-circle"></i>
+                            <div>
+                                <h4>Atención Humanizada</h4>
+                                <p>El paciente es el centro de todo lo que hacemos.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de Instalaciones -->
+        <section id="galeria" class="gallery section-padding bg-light">
+            <div class="container">
+                <div class="section-heading text-center fade-in-up">
+                    <span class="subtitle">Nuestras Instalaciones</span>
+                    <h2>Espacios diseñados para tu bienestar</h2>
+                    <p>Conoce nuestras modernas instalaciones, equipadas con tecnología de última generación para brindarte la mejor atención.</p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item fade-in-up">
+                        <img src="img/foto3.jpg" alt="Consultorio Médico" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="ph-bold ph-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in-up delay-1">
+                        <img src="img/foto4.jpg" alt="Área de Recepción" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="ph-bold ph-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in-up delay-2">
+                        <img src="img/foto5.jpg" alt="Sala de Espera" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="ph-bold ph-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Form Section -->
+        <section id="cita" class="appointment section-padding">
+            <div class="container appointment-container">
+                <div class="appointment-text fade-in-up">
+                    <h2>Agenda tu cita fácilmente</h2>
+                    <p>Reserva tu espacio en menos de un minuto. Nuestro equipo te contactará para confirmar tu horario.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="ph-bold ph-phone"></i></div>
+                            <div>
+                                <h5>Llámanos</h5>
+                                <p>+502 1234 5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="ph-bold ph-envelope-simple"></i></div>
+                            <div>
+                                <h5>Escríbenos</h5>
+                                <p>citas@pradosvh.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="ph-bold ph-map-pin"></i></div>
+                            <div>
+                                <h5>Visítanos</h5>
+                                <p>Clínica Prados VH, Ciudad Médica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="appointment-form-wrapper glass-panel fade-in-up delay-1">
+                    <form id="appointmentForm" class="appointment-form">
+                        <h3>Solicitar Cita</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required>
+                            <i class="ph-bold ph-user form-icon"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Ej. +502 1234 5678" required>
+                            <i class="ph-bold ph-phone form-icon"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Servicio Requerido</label>
+                            <div class="select-wrapper">
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Selecciona una especialidad</option>
+                                    <option value="general">Consulta General</option>
+                                    <option value="pediatria">Pediatría</option>
+                                    <option value="odontologia">Odontología</option>
+                                    <option value="examenes">Exámenes Médicos</option>
+                                </select>
+                                <i class="ph-bold ph-caret-down select-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Fecha Preferida (Opcional)</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        
+                        <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
+                            <span>Confirmar Solicitud</span>
+                            <i class="ph-bold ph-paper-plane-right"></i>
+                        </button>
+                        
+                        <div id="formSuccess" class="form-message success hidden">
+                            <i class="ph-fill ph-check-circle"></i>
+                            <p>¡Solicitud enviada! Nos pondremos en contacto pronto.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo text-white">
+                    <i class="ph-bold ph-heartbeat"></i>
+                    Prados VH<span>.</span>
+                </a>
+                <p>Brindando atención médica de excelencia con un enfoque centrado en la persona, la innovación y la seguridad.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="ph-fill ph-twitter-logo"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios Médicos</a></li>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#galeria">Instalaciones</a></li>
+                    <li><a href="#cita">Agendar Cita</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Especialidades</h4>
+                <ul>
+                    <li><a href="#">Consulta General</a></li>
+                    <li><a href="#">Área de Pediatría</a></li>
+                    <li><a href="#">Clínica Odontológica</a></li>
+                    <li><a href="#">Laboratorio y Exámenes</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-info">
+                <h4>Horario de Atención</h4>
+                <ul class="hours-list">
+                    <li><span>Lunes - Viernes:</span> <span>7:00 AM - 8:00 PM</span></li>
+                    <li><span>Sábado:</span> <span>8:00 AM - 4:00 PM</span></li>
+                    <li><span>Domingo:</span> <span>Urgencias 24h</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Clínica Médica Prados VH. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Link -->
+    <script src="script.js"></script>
+</body>
+</html>

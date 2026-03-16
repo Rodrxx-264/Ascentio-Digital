@@ -1,0 +1,116 @@
+/*
+  styles.css — Estilos modernos para TACO FUEGO MX
+  Mobile-first, variables de color, grid y animaciones.
+*/
+:root{
+  --chile: #d62828; /* rojo chile */
+  --maiz: #fcbf49;  /* amarillo maíz */
+  --cilantro: #2a9d8f; /* verde */
+  --black: #111111;
+  --white: #ffffff;
+  --muted: #666666;
+  --glass: rgba(255,255,255,0.06);
+  --radius: 12px;
+  --shadow: 0 8px 24px rgba(17,17,17,0.18);
+}
+
+/* Reset básico */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:'Poppins',sans-serif;color:var(--black);background:#fff;line-height:1.4}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+/* NAV */
+.nav{background:linear-gradient(180deg, rgba(17,17,17,0.95), rgba(17,17,17,0.9));color:var(--white);position:sticky;top:0;z-index:40}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px}
+.logo span{color:var(--maiz)}
+.nav-links{display:none}
+.nav-links a{color:var(--white);margin-left:18px;text-decoration:none}
+.nav-toggle{background:transparent;border:0;color:var(--white);font-size:20px}
+
+/* HERO */
+.hero{position:relative;padding:28px 0 40px;background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1600');background-size:cover;background-position:center;color:var(--white)}
+.hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(17,17,17,0.55), rgba(17,17,17,0.25));}
+.hero-inner{position:relative;display:grid;grid-template-columns:1fr;gap:18px;align-items:center}
+.eyebrow{color:var(--maiz);font-weight:700}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:34px;margin:8px 0}
+.promos-list{list-style:none;margin:12px 0}
+.promo{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.04);padding:10px;border-radius:10px;margin-bottom:8px}
+.promo .emoji{font-size:18px}
+.price{font-weight:700;color:var(--maiz)}
+.hero-ctas{margin-top:12px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;cursor:pointer;border:0}
+.btn-primary{background:linear-gradient(90deg,var(--chile),#bb2121);color:var(--white);box-shadow:0 6px 18px rgba(214,40,40,0.24);transition:transform .16s ease,box-shadow .16s}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(214,40,40,0.28)}
+.btn-outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.14);margin-left:8px}
+.banner{margin-top:12px;background:var(--maiz);color:var(--black);display:inline-block;padding:6px 10px;border-radius:999px;font-weight:600}
+
+.hero-right img{width:100%;border-radius:14px;box-shadow:var(--shadow)}
+.sold-counter{margin-top:8px;font-weight:700;color:var(--white)}
+
+/* CARDS */
+.section{padding:28px 0}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:26px;margin-bottom:12px}
+.cards{display:grid;grid-template-columns:1fr;gap:14px}
+.card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-body{padding:12px}
+.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:8px}
+.btn-order{background:var(--cilantro);color:var(--white);padding:8px 12px;border-radius:8px;border:0}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(17,17,17,0.18)}
+
+/* Menú */
+.menu-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.menu-col h3{margin-bottom:6px}
+.menu-col ul{list-style:none}
+.menu-col li{padding:8px 0;border-bottom:1px dashed rgba(0,0,0,0.04)}
+.simple-list{list-style:none;padding-left:0}
+.simple-list li{padding:8px 0}
+
+/* Gallery */
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gallery-grid img{width:100%;height:160px;object-fit:cover;border-radius:10px;transition:transform .22s ease,filter .22s}
+.gallery-grid img:hover{transform:scale(1.03);filter:brightness(1.02)}
+
+/* Order form */
+.order-form{display:flex;flex-direction:column;gap:10px;max-width:620px}
+.order-form input,.order-form textarea{padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.08)}
+.form-actions{display:flex;gap:8px;align-items:center}
+.btn-whatsapp{background:var(--cilantro);color:var(--white);border-radius:8px}
+.form-msg{margin-top:8px;color:var(--cilantro);font-weight:600}
+
+/* Location */
+.location-grid{display:grid;gap:12px}
+.location-grid iframe{width:100%;height:220px;border:0;border-radius:10px}
+
+/* Footer */
+.footer{background:#0f0f0f;color:var(--white);padding:18px 0;margin-top:24px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.socials a{color:var(--white);margin-left:10px}
+
+/* Whatsapp float */
+.whatsapp-float{position:fixed;right:18px;bottom:18px;background:linear-gradient(90deg,var(--cilantro),#1b9f84);color:#fff;width:56px;height:56px;border-radius:999px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(42,157,143,0.2);z-index:60}
+
+/* Animations */
+.fade-up{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.fade-up.in-view{opacity:1;transform:none}
+
+/* Responsive */
+@media(min-width:720px){
+  .nav-links{display:flex}
+  .nav-toggle{display:none}
+  .hero-inner{grid-template-columns:1fr 420px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-template-columns:repeat(4,1fr)}
+  .menu-grid{grid-template-columns:1fr 1fr}
+  .location-grid{grid-template-columns:1fr 320px}
+}
+
+@media(min-width:1024px){
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .hero-title{font-size:44px}
+}
+
+/* Accessibility focus */
+button:focus,a:focus,input:focus,textarea:focus{outline:3px solid rgba(252,191,73,0.25);outline-offset:3px}

@@ -80,7 +80,7 @@ body::before {
     left: -15vw;
     width: 60vw;
     height: 60vh;
-    background: radial-gradient(ellipse, rgba(37, 99, 235, 0.06) 0%, transparent 65%);
+    background: radial-gradient(ellipse, rgba(163, 145, 120, 0.08) 0%, transparent 65%);
     pointer-events: none;
     z-index: 0;
 }
@@ -92,7 +92,7 @@ body::after {
     right: -15vw;
     width: 55vw;
     height: 55vh;
-    background: radial-gradient(ellipse, rgba(6, 182, 212, 0.05) 0%, transparent 65%);
+    background: radial-gradient(ellipse, rgba(209, 196, 173, 0.06) 0%, transparent 65%);
     pointer-events: none;
     z-index: 0;
 }
@@ -307,6 +307,22 @@ nav {
 .lang-btn:hover, .lang-btn.active {
     color: var(--text-main) !important;
     background: rgba(255,255,255,0.1) !important;
+}
+
+/* Social icons */
+.social-icon {
+    color: var(--text-muted);
+    transition: var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center;
+    border-radius: 50%;
+}
+.social-icon:hover {
+    color: var(--primary-light);
+    transform: translateY(-3px) scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(163, 145, 120, 0.5));
 }
 
 /* Hamburger */
@@ -563,8 +579,8 @@ nav {
 /* PROJECTS */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
 }
 
 .project-card {
@@ -573,6 +589,9 @@ nav {
     border-radius: var(--radius-xl);
     overflow: hidden;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .project-card:hover {
     border-color: var(--card-border-hover);
@@ -582,22 +601,29 @@ nav {
 
 .project-img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
-    transition: transform 0.6s ease;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.project-card:hover .project-img { transform: scale(1.04); }
+.project-card:hover .project-img { transform: scale(1.1); }
 
-.project-content { padding: 28px; }
-.project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.project-content { 
+    padding: 24px; 
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column;
+}
+.project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
 .project-tag {
-    background: rgba(37, 99, 235, 0.15);
+    background: rgba(163, 145, 120, 0.1);
     color: var(--primary-light);
-    border: 1px solid rgba(37, 99, 235, 0.3);
+    border: 1px solid rgba(163, 145, 120, 0.2);
     padding: 4px 12px;
     border-radius: 50px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .project-content h3 { font-size: 1.25rem; margin-bottom: 10px; color: var(--text-main); }
@@ -1167,26 +1193,10 @@ input::placeholder, textarea::placeholder { color: var(--text-dim); }
 /* ==================================================================
    11. ANIMATIONS
    ================================================================== */
-.reveal {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+/* Base states for GSAP overrides (to prevent flash before JS loads) */
+.reveal, .reveal-left, .reveal-right, .hero h1, .hero .section-subtitle, .hero-cta a, .trust-badge {
+    visibility: hidden;
 }
-.reveal.active { opacity: 1; transform: translateY(0); }
-
-.reveal-left {
-    opacity: 0;
-    transform: translateX(-40px);
-    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.reveal-left.active { opacity: 1; transform: translateX(0); }
-
-.reveal-right {
-    opacity: 0;
-    transform: translateX(40px);
-    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.reveal-right.active { opacity: 1; transform: translateX(0); }
 
 /* Staggered children */
 .stagger-children > * { transition-delay: calc(var(--i, 0) * 0.08s); }

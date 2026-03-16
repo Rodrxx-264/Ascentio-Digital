@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TACO FUEGO MX — Promociones y Pedidos</title>
+  <meta name="description" content="Taco Fuego MX — taquería street food. Promociones del día, combos y pedidos rápidos por WhatsApp o formulario.">
+  <meta property="og:title" content="TACO FUEGO MX — Promociones del Día">
+  <meta property="og:description" content="Taco Fuego MX — tacos abundantes, combos familiares y promociones diarias. Ordena ahora.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1550317138-10000687a72b?w=1200">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <h1 class="logo">TACO FUEGO <span>MX</span></h1>
+      </div>
+      <nav class="nav-links">
+        <a href="#promos">Promociones</a>
+        <a href="#combos">Combos</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#pedido" class="btn btn-sm">Ordenar</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO: PROMOCIONES DEL DÍA -->
+  <section id="promos" class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h2 class="eyebrow">PROMOCIONES DEL DÍA</h2>
+        <h3 class="hero-title">Promociones que encienden el paladar</h3>
+
+        <ul class="promos-list">
+          <li class="promo">
+            <span class="emoji">🔥</span>
+            <div>
+              <strong>Combo Tacos Locos</strong>
+              <div class="muted">5 tacos + bebida</div>
+            </div>
+            <div class="price">Q35</div>
+          </li>
+          <li class="promo">
+            <span class="emoji">🌮</span>
+            <div>
+              <strong>Martes Taquero</strong>
+              <div class="muted">3 tacos al pastor</div>
+            </div>
+            <div class="price">Q20</div>
+          </li>
+          <li class="promo">
+            <span class="emoji">🔥</span>
+            <div>
+              <strong>Mega Combo Fuego</strong>
+              <div class="muted">10 tacos + 2 bebidas</div>
+            </div>
+            <div class="price">Q65</div>
+          </li>
+        </ul>
+
+        <div class="hero-ctas">
+          <a href="#pedido" class="btn btn-primary">ORDENAR AHORA</a>
+          <a href="#combos" class="btn btn-outline">VER MENÚ</a>
+        </div>
+
+        <div class="banner">Promoción: Envío gratis en pedidos superiores a Q80</div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Hero image: appetizing tacos (unsplash) -->
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=900" alt="Tacos" loading="lazy">
+        <div class="sold-counter">Tacos vendidos: <span id="soldCount">0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMBOS DESTACADOS -->
+  <main class="container">
+    <section id="combos" class="section combos">
+      <h2 class="section-title">Combos Destacados</h2>
+      <div class="cards">
+        <!-- Each card has an 'order' button that prefills the form -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800" alt="Combo Callejero" loading="lazy">
+          <div class="card-body">
+            <h3>Combo Callejero</h3>
+            <p>3 tacos al pastor · 1 bebida</p>
+            <div class="card-footer">
+              <div class="price">Q25</div>
+              <button class="btn btn-order" data-order="Combo Callejero - 3 tacos al pastor">ORDENAR</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544145945-f9046a2a0f89?w=800" alt="Combo Fuego" loading="lazy">
+          <div class="card-body">
+            <h3>Combo Fuego</h3>
+            <p>5 tacos mixtos · 1 bebida · papas pequeñas</p>
+            <div class="card-footer">
+              <div class="price">Q40</div>
+              <button class="btn btn-order" data-order="Combo Fuego - 5 tacos mixtos">ORDENAR</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=800" alt="Combo Pareja" loading="lazy">
+          <div class="card-body">
+            <h3>Combo Pareja</h3>
+            <p>8 tacos surtidos · 2 bebidas</p>
+            <div class="card-footer">
+              <div class="price">Q55</div>
+              <button class="btn btn-order" data-order="Combo Pareja - 8 tacos surtidos">ORDENAR</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800" alt="Combo Familiar" loading="lazy">
+          <div class="card-body">
+            <h3>Combo Familiar</h3>
+            <p>15 tacos · 4 bebidas</p>
+            <div class="card-footer">
+              <div class="price">Q95</div>
+              <button class="btn btn-order" data-order="Combo Familiar - 15 tacos">ORDENAR</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800" alt="Combo Fiesta" loading="lazy">
+          <div class="card-body">
+            <h3>Combo Fiesta</h3>
+            <p>25 tacos surtidos · 6 bebidas</p>
+            <div class="card-footer">
+              <div class="price">Q150</div>
+              <button class="btn btn-order" data-order="Combo Fiesta - 25 tacos surtidos">ORDENAR</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- MENÚ DE TACOS -->
+    <section id="menu" class="section menu">
+      <h2 class="section-title">Menú de Tacos</h2>
+      <div class="menu-grid">
+        <div class="menu-col">
+          <h3>Tacos Clásicos</h3>
+          <ul>
+            <li>Taco al Pastor <span class="price">Q8</span></li>
+            <li>Taco de Asada <span class="price">Q9</span></li>
+            <li>Taco de Pollo <span class="price">Q8</span></li>
+            <li>Taco de Chorizo <span class="price">Q9</span></li>
+          </ul>
+        </div>
+        <div class="menu-col">
+          <h3>Tacos Especiales</h3>
+          <ul>
+            <li>Taco Fuego — carne, queso fundido, salsa especial <span class="price">Q12</span></li>
+            <li>Taco Supremo — carne, guacamole, pico de gallo <span class="price">Q13</span></li>
+            <li>Taco Volcán — tortilla crujiente, queso y carne <span class="price">Q14</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACOMPAÑAMIENTOS -->
+    <section class="section sides">
+      <h2 class="section-title">Acompañamientos</h2>
+      <ul class="simple-list">
+        <li>Nachos con queso — <span class="price">Q25</span></li>
+        <li>Papas fritas — <span class="price">Q18</span></li>
+        <li>Guacamole — <span class="price">Q15</span></li>
+        <li>Quesadillas — <span class="price">Q20</span></li>
+      </ul>
+    </section>
+
+    <!-- BEBIDAS -->
+    <section class="section drinks">
+      <h2 class="section-title">Bebidas</h2>
+      <ul class="simple-list">
+        <li>Gaseosas — <span class="price">Q12</span></li>
+        <li>Horchata — <span class="price">Q15</span></li>
+        <li>Agua de jamaica — <span class="price">Q15</span></li>
+        <li>Agua mineral — <span class="price">Q10</span></li>
+      </ul>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="section gallery">
+      <h2 class="section-title">Galería</h2>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600" alt="Tacos closeup" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?w=600" alt="Preparación" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600" alt="Ingredientes" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600" alt="Combos" loading="lazy">
+      </div>
+    </section>
+
+    <!-- PEDIDOS RÁPIDOS -->
+    <section id="pedido" class="section order">
+      <h2 class="section-title">Pedido Rápido</h2>
+      <form id="orderForm" class="order-form" aria-label="Formulario de pedido">
+        <label for="name">Nombre</label>
+        <input id="name" name="name" required placeholder="Tu nombre">
+
+        <label for="phone">Teléfono</label>
+        <input id="phone" name="phone" required placeholder="502XXXXXXXX" pattern="[0-9]{8,15}">
+
+        <label for="details">Pedido</label>
+        <textarea id="details" name="details" rows="4" required placeholder="Escribe tu pedido o selecciona un combo"></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">ENVIAR PEDIDO</button>
+          <button type="button" id="waBtn" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+        </div>
+
+        <div id="formMsg" class="form-msg" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="section location">
+      <h2 class="section-title">Ubicación</h2>
+      <div class="location-grid">
+        <div class="map">
+          <!-- Simple iframe para integrarse sin API key -->
+          <iframe src="https://www.google.com/maps?q=zona+10,guatemala&output=embed" loading="lazy" aria-label="Mapa de ubicación"></iframe>
+        </div>
+        <div class="info">
+          <h3>TACO FUEGO MX</h3>
+          <p>Dirección: 4a calle ejemplo, Ciudad</p>
+          <p>Horario: Lun-Dom 10:00 - 23:00</p>
+          <p>Teléfono: +502 1234 5678</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WHATSAPP FLOAT BUTTON -->
+  <a id="whatsappFloat" class="whatsapp-float" href="https://wa.me/50212345678?text=Hola%20Taco%20Fuego%20MX,%20quiero%20hacer%20un%20pedido" target="_blank" aria-label="Pedir por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h4>TACO FUEGO MX</h4>
+        <p>© <span id="year"></span> Taco Fuego MX. Todos los derechos reservados.</p>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
